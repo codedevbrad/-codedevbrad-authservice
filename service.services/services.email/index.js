@@ -5,7 +5,7 @@
 const client = require('@sendgrid/mail'); 
 const Email  = require('./class');
 
-const sendgrid_key = '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';
+const sendgrid_key = sendgridKeyClass;
 
 client.setApiKey( sendgrid_key );
 
