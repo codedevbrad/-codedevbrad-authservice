@@ -1,0 +1,26 @@
+{
+  "name": "@codedevbrad/authservice",
+  "version": "1.0.0",
+  "description": "authservice",
+  "main": "index.js",
+  "dependencies": {
+    "@codedevbrad/serverutils": "^1.0.2",
+    "@sendgrid/mail": "^7.7.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "parent-require": "^1.0.0",
+    "path": "^0.12.7"
+  },
+  "peerDependencies": {
+    "mongoose": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
