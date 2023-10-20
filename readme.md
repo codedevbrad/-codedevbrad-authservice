@@ -74,14 +74,6 @@ AuthService.initialiseAuthService({
 
 
 
-## To do
-- [ ]  add routes and their postman tests to the description to the readme
-- [ ]  add service database and queries for example service.
-- [ ]  add mock database collection and DB setup to use test database.
-- [ ]  write jest tests for the example service.
-- [ ]  do tests and write postman mock requests for routes.
-- [ ]  write documentation of the folder and app structure.
-
 ## issues so far.
 * can't make mongoose queries when the service is imported as an Npm package.
    - seems like https://www.npmjs.com/package/parent-require might fix the issue. 
