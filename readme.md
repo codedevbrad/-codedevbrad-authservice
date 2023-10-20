@@ -43,10 +43,10 @@
 ### JWT
 
 ```javascript
-    import { JWTMiddleware } from './services/service.user/index';
+    import { JWTMiddleware } from '@codedevbrad/authservice';
     const { authenticateToken , authenticateTokenMiddleware } = JWTMiddleware;
 
-    import { AuthUser , AuthUserQueries } from './services/service.user/index';
+    import { AuthUser , AuthUserQueries } from '@codedevbrad/authservice';
 ```
 
 ## interacting with the Auth db User.
