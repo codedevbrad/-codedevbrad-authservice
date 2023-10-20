@@ -1,10 +1,4 @@
 
-## issues so far.
-* can't make mongoose queries when the service is imported as an Npm package.
-   - seems like https://www.npmjs.com/package/parent-require might fix the issue. 
-   - the issue seems to be caused by having mongoose installed in both the parent project and the auth package. I think
-     the issue seems to only crop up when doing npm link.
-
 ## implementing the authservice.
 
 ```javascript
@@ -62,6 +56,23 @@
     import { AuthUser , AuthUserQueries } from '@codedevbrad/authservice';
 ```
 ### purpose of AuthUser and AuthUserQueries.
+
+
+## To do
+- [ ]  add routes and their postman tests to the description to the readme
+- [ ]  add service database and queries for example service.
+- [ ]  add mock database collection and DB setup to use test database.
+- [ ]  write jest tests for the example service.
+- [ ]  do tests and write postman mock requests for routes.
+- [ ]  write documentation of the folder and app structure.
+
+## issues so far.
+* can't make mongoose queries when the service is imported as an Npm package.
+   - seems like https://www.npmjs.com/package/parent-require might fix the issue. 
+   - the issue seems to be caused by having mongoose installed in both the parent project and the auth package. I think
+     the issue seems to only crop up when doing npm link.
+
+
 
 ### implementng these.
 
