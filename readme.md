@@ -25,16 +25,11 @@
 
 |  perams       |  options                | description  |
 |---------------|-------------------------|--------------|
-|  authProvider |  jwt | auth0 | passport | choose the auth provider |
+|  authProvider |  'jwt'| 'auth0' | 'passport' | choose the auth provider |
+|  app          |   link to                      | the express() object   |
+|  path         |  '/auth'                | the api path needed to access the auth service |
+|  extendModel  |  @object                | add additional model fields         |
 |  register     |  @object                |  extending how you interact with the register handler |
-|  path         |                         | the path needed for the auth service |
-|  extendModel  |                         | add additional model fields         |
-|  app          |                         | the express() object   |
-
-
-
-## extending the register handler.
-
 
 ## using the different strategy providers.
 
@@ -49,13 +44,33 @@
 
 ### implementing these.
 
-
 ## interacting with the Auth db User.
 
 ```javascript
     import { AuthUser , AuthUserQueries } from '@codedevbrad/authservice';
 ```
 ### purpose of AuthUser and AuthUserQueries.
+
+## Giving the service access to the express Object.
+```javascript
+import express , { Application , Request , Response , NextFunction } from 'express';  
+const app = express();
+
+import { AuthService } from '@codedevbrad/authservice';
+
+AuthService.initialiseAuthService({
+        authProvider: 'jwt' , 
+        app: app
+});
+
+```
+
+## choosing your DB API path.
+
+## extending the db model.
+
+## extending the register handler.
+
 
 
 ## To do
