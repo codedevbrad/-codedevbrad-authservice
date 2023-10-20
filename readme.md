@@ -8,7 +8,7 @@
 ## implementing the authservice.
 
 ```javascript
-    import { AuthService } from './services/service.user/index';
+    import { AuthService } from '@codedevbrad/authservice';
 
     AuthService.initialiseAuthService({
         authProvider: 'jwt' , 
