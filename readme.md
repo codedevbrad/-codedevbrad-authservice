@@ -40,9 +40,9 @@
     const { authenticateToken , authenticateTokenMiddleware } = JWTMiddleware;
 ```
 
-### what authenticateToken and authenticateTokenMiddleware does.
+#### what authenticateToken and authenticateTokenMiddleware does.
 
-### implementing these.
+#### implementing these.
 
 ## interacting with the Auth db User.
 
@@ -64,6 +64,7 @@ AuthService.initialiseAuthService({
 });
 
 ```
+---
 
 ## choosing your DB API path.
 
