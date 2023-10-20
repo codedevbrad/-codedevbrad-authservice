@@ -31,11 +31,15 @@
 
 |  perams       |  options                | description  |
 |---------------|-------------------------|--------------|
-|  authProvider |  jwt | auth0 | passport |              |
-|  register     |                         |              |
-|  path         |                         |              |
-|  extendModel  |                         |              |
-|  app          |                         |              |
+|  authProvider |  jwt | auth0 | passport | choose the auth provider |
+|  register     |  @object                |  extending how you interact with the register handler |
+|  path         |                         | the path needed for the auth service |
+|  extendModel  |                         | add additional model fields         |
+|  app          |                         | the express() object   |
+
+
+
+## extending the register handler.
 
 
 ## using the different strategy providers.
