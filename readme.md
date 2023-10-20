@@ -51,8 +51,17 @@
     const { authenticateToken , authenticateTokenMiddleware } = JWTMiddleware;
 ```
 
+### what authenticateToken and authenticateTokenMiddleware does.
+
+### implementing these.
+
+
 ## interacting with the Auth db User.
 
 ```javascript
     import { AuthUser , AuthUserQueries } from '@codedevbrad/authservice';
 ```
+### purpose of AuthUser and AuthUserQueries.
+
+### implementng these.
+
